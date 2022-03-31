@@ -9,9 +9,11 @@ import { Component, OnInit } from '@angular/core';
 export class CoursesComponent implements OnInit {
 
   courses: Course[] = [
-    {_id: 1, name: 'Angular', category: 'front-end'}
+    {_id: 1, name: 'Angular', category: 'front-end', tempo: '40h'},
+    {_id: 2, name: 'React', category: 'front-end', tempo: '50h'},
+    {_id: 3, name: 'Java', category: 'back-end', tempo: '90h'}
   ];
-  displayedColumns = ['name', 'category'];
+  displayedColumns = ['name', 'category', 'tempo'];
 
   constructor() { }
 
